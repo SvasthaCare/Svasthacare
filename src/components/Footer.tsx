@@ -11,14 +11,14 @@ const Footer = () => {
   ];
 
   const serviceLinks = [
-    {title: 'Cosmetic', id: 'services'},
-    {title: 'Urology', id: 'services'},
-    {title: 'Laproscopy', id: 'services'},
-    {title: 'Proctology', id: 'services'},
-    {title: 'Vascular', id: 'services'},
-    {title: 'Orthopedics', id: 'services'},
-    {title: 'Neurology', id: 'services'},
-    {title: 'Ophthalmology', id: 'services'},
+    { title: 'Cosmetic', id: 'services' },
+    { title: 'Urology', id: 'services' },
+    { title: 'Laproscopy', id: 'services' },
+    { title: 'Proctology', id: 'services' },
+    { title: 'Vascular', id: 'services' },
+    { title: 'Orthopedics', id: 'services' },
+    { title: 'Neurology', id: 'services' },
+    { title: 'Ophthalmology', id: 'services' },
   ]
 
 
@@ -101,7 +101,7 @@ const Footer = () => {
             </ul>
           </div>
 
-        
+
 
           {/* Contact Info */}
           <div>
@@ -128,11 +128,27 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-gray-400 text-center md:text-left">
-            © 2025 SvasthaCare. All rights reserved.
-          </p>
+        <div className="border-t border-gray-800 pt-8">
+          <div className="text-gray-400 text-sm text-center md:flex md:justify-center md:items-center md:gap-2">
+            <span>© 2025 SvasthaCare. All rights reserved.</span>
+
+            <span className="hidden md:inline">|</span>
+
+            <span className="block md:inline">
+              Designed by{" "}
+              <a
+                href="https://www.pikfusion.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-black text-rose-400 hover:text-rose-300 transition-colors"
+              >
+                PikFusion
+              </a>
+            </span>
+          </div>
         </div>
+
+
       </div>
     </footer>
   );
